@@ -178,7 +178,7 @@ ul.navbar-bawah li a:hover {
   background-repeat: no-repeat;
 }
 
-/* ? Surat */ 
+/* ? Surat */
 .isi .surat h4 {
   padding: 15rem;
   color: var(--font-sedang);
@@ -469,7 +469,7 @@ ul.navbar-bawah li a:hover {
 
 .akad-nikah .google-map {
   height: 400px;
-  width: auto;
+  width: 100%;
   margin-bottom: 1rem;
   border-radius: var(--lengkung);
   -webkit-border-radius: var(--lengkung);
