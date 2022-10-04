@@ -817,20 +817,20 @@ footer img {
     background-repeat: no-repeat;
   }
   .kepala .pembuka .foto-mempelai img:nth-child(1) {
-    width: 63%;
-    height: 42%;
-    top: 114px;
-    right: 72px;
+    width: 55%;
+    height: 37%;
+    top: 124px;
+    right: 93px;
   }
   .kepala .pembuka .foto-mempelai img:nth-child(2) {
     margin: 8rem auto 0 auto;
-    width: 60%;
+    width: 55%;
   }
   .kepala .pembuka .nama-mempelai .card:nth-child(1) {
     margin: 2rem 4rem 0 4rem;
   }
   .kepala .pembuka .nama-mempelai .card:nth-child(2) {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .kepala .pembuka .nama-mempelai .card:nth-child(1) h1 {
     font-size: 3rem;
@@ -862,6 +862,9 @@ footer img {
   .gallery {
     margin-top: 12rem;
   }
+  .gallery h1 {
+    color: #ffffff;
+  }
   .gallery .list-images {
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
@@ -875,10 +878,10 @@ footer img {
       "g8 g8";
   }
   .gallery img.background-gallery {
-    height: 735px;
+    height: 850px;
   }
   .gallery .container {
-    top: 132rem;
+    top: 138rem;
     left: 0;
     right: 0;
   }
