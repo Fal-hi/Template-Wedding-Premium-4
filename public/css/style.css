@@ -146,15 +146,15 @@ ul.navbar-bawah li a:hover {
   align-items: center;
 }
 
-.kepala .pembuka .foto-mempelai img:nth-child(1) {
+/* .kepala .pembuka .foto-mempelai img.border {
   width: 30%;
   height: 90%;
   position: absolute;
   top: 64px;
   right: 187px;
-}
+} */
 
-.kepala .pembuka .foto-mempelai img:nth-child(2) {
+.kepala .pembuka .foto-mempelai img.foto {
   margin: 5rem auto;
   width: 70%;
   border-radius: 100px;
@@ -272,14 +272,6 @@ ul.navbar-bawah li a:hover {
   text-align: center;
   color: var(--putih);
   text-shadow: var(--shadow-text);
-}
-
-.gallery .container {
-  z-index: 2;
-  position: absolute;
-  top: 215rem;
-  left: 3%;
-  right: 3%;
 }
 
 .gallery .list-images {
@@ -717,12 +709,6 @@ footer img {
 
 /* ? Nest Hub */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .kepala .pembuka .foto-mempelai img:nth-child(1) {
-    width: 35%;
-    height: 85%;
-    top: 64px;
-    right: 100px;
-  }
   .isi {
     background-size: contain;
     background-repeat: no-repeat;
@@ -763,12 +749,6 @@ footer img {
   }
   .kepala .pembuka .nama-mempelai .card:nth-child(2) {
     margin: 2rem auto;
-  }
-  .kepala .pembuka .foto-mempelai img:nth-child(1) {
-    width: 32%;
-    height: 32%;
-    top: 70px;
-    right: 99px;
   }
   .isi .surat h4 {
     padding: 7rem 1rem 5rem 1rem;
@@ -816,13 +796,7 @@ footer img {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .kepala .pembuka .foto-mempelai img:nth-child(1) {
-    width: 55%;
-    height: 37%;
-    top: 75px;
-    right: 93px;
-  }
-  .kepala .pembuka .foto-mempelai img:nth-child(2) {
+  .kepala .pembuka .foto-mempelai img.foto {
     margin: 5rem auto 0 auto;
     width: 55%;
   }
@@ -860,7 +834,7 @@ footer img {
     margin-top: 4rem;
   }
   .gallery {
-    margin-top: 12rem;
+    margin-top: 9rem;
   }
   .gallery h1 {
     color: #ffffff;
@@ -877,16 +851,8 @@ footer img {
       "g6 g7"
       "g8 g8";
   }
-  .gallery img.background-gallery {
-    height: 850px;
-  }
-  .gallery .container {
-    top: 130rem;
-    left: 0;
-    right: 0;
-  }
   .gallery img.garis {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
   .acara .tanggal {
     padding-bottom: 1rem;

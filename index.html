@@ -23,35 +23,111 @@
     />
     <title>Template Wedding 4</title>
   </head>
-  <style>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Alegreya", sans-serif;
+    }
+
+    :root {
+      --font-besar: #362222;
+      --font-sedang: #171010;
+      --font-kecil: #7e7979;
+      --warna-header: linear-gradient(
+        90deg,
+        #fffef7 42.47%,
+        #d1e0da 65.68%,
+        #9dbeb9 100%
+      );
+      --warna-body: linear-gradient(
+        112.68deg,
+        rgba(247, 198, 160, 0.2) 0%,
+        rgba(233, 197, 164, 0.577584) 37.48%,
+        rgba(220, 196, 168, 0.651302) 46.41%,
+        rgba(157, 190, 185, 0.2) 77.14%
+      );
+      --warna-button: linear-gradient(90deg, #f7c6a0 0%, #9dbeb9 100%);
+      --shadow-button: 2px 2px 2px var(--font-kecil);
+      --shadow-text: 3px 3px 4px var(--font-kecil);
+      --lengkung: 1rem;
+      --lengkungO: 999px;
+    }
+    .kepala {
+      background: var(--warna-header);
+    }
+    .kepala .pembuka {
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: unset;
+    }
     .pembuka .isi {
       text-align: center;
+      padding-top: 9rem;
     }
     .pembuka .isi h1 {
       font-family: "Birthstone Bounce", cursive;
       font-weight: bold;
+      font-size: 4rem;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .kepala .pembuka .foto-mempelai img:nth-child(1) {
+        width: 35%;
+        height: 85%;
+        top: 64px;
+        right: 100px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .kepala {
+        height: 100vh;
+      }
+      .kepala .pembuka .isi {
+        padding-top: 22rem;
+      }
+      .kepala .pembuka .nama-mempelai .card:nth-child(1) {
+        margin-top: 7rem;
+      }
+      .kepala .pembuka .nama-mempelai .card:nth-child(2) {
+        margin: 2rem auto;
+      }
+      .kepala .pembuka .foto-mempelai img:nth-child(1) {
+        width: 32%;
+        height: 32%;
+        top: 70px;
+        right: 99px;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .kepala .pembuka {
+        height: 100vh;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .kepala .pembuka .isi {
+        padding-top: 11rem;
+        text-align: left;
+      }
+      .kepala .pembuka .isi h1 {
+        font-size: 3rem;
+      }
     }
   </style>
   <body>
-    <!-- Header -->
-    <section class="kepala" id="pembuka">
-      <!-- Desktop and Tablet -->
+    <div class="kepala" id="header">
       <div
         class="pembuka d-none d-md-block d-lg-block d-xl-block d-xxl-block"
-        style="
-          background-image: url('public/gambar/hiasan/header-background.png');
-          height: 100vh;
-          width: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: unset;
-        "
+        style="background-image: url('header-background.png')"
       >
         <div class="container">
-          <div class="isi" style="padding-top: 9rem">
-            <h1 style="font-size: 4rem">Jojo & Shinta</h1>
+          <div class="isi">
+            <h1>Jojo & Shinta</h1>
             <h5 class="p-3">Kepada Bapak/Ibu/Saudara/I</h5>
-            <h1 style="font-size: 4rem">Zefri & Anita</h1>
+            <h1>Zefri & Anita</h1>
             <div class="w-50 mx-auto">
               <h5 class="p-3">
                 Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir
@@ -71,57 +147,33 @@
       <div
         class="pembuka d-md-none d-lg-none d-xl-none d-xxl-none"
         id="pembuka"
-        style="
-          background-image: url('public/gambar/hiasan/header-background-phone.png');
-        "
+        style="background-image: url('header-background-phone.png')"
       >
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 foto-mempelai">
-              <img
-                src="public/gambar/hiasan/border-mempelai.png"
-                class="img-fluid"
-                alt="Border Mempelai"
-              />
-              <img
-                src="public/gambar/foto/mempelai.jpg"
-                class="img-fluid"
-                alt="Foto Mempelai"
-              />
-            </div>
-            <div class="col-lg-6 col-md-6 nama-mempelai">
-              <div class="isi" style="padding-top: 2rem">
-                <h1 style="font-size: 2.5rem">Kelvin & Citra</h1>
-                <h5 class="p-3 fs-6">Kepada Bapak/Ibu/Saudara/I</h5>
-                <h1 style="font-size: 2.5rem">Zefri & Anita</h1>
-                <div class="text-center mx-auto">
-                  <h5 class="p-3 fs-6">
-                    Tanpa mengurangi rasa hormat, kami mengundang Anda untuk
-                    hadir ke acara pernikahan kami.
-                  </h5>
-                </div>
-                <a
-                  href="isi.html"
-                  class="btn"
-                  style="
-                    background: linear-gradient(
-                      90deg,
-                      #f7c6a0 0%,
-                      #9dbeb9 100%
-                    );
-                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 50px;
-                    text-decoration: none;
-                  "
-                >
-                  Buka Undangan
-                </a>
-              </div>
-            </div>
+          <div class="isi">
+            <h1>Kelvin & Citra</h1>
+            <h5 class="p-3 fs-6">Kepada Bapak/Ibu/Saudara/I</h5>
+            <h1>Zefri & Anita</h1>
+            <h5 class="p-3 fs-6">
+              Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir ke
+              acara pernikahan kami.
+            </h5>
+            <a
+              href="isi.html"
+              class="btn"
+              style="
+                background: linear-gradient(90deg, #f7c6a0 0%, #9dbeb9 100%);
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 50px;
+                text-decoration: none;
+              "
+            >
+              Buka Undangan
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <script src="public/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
