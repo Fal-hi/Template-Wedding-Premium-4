@@ -146,13 +146,13 @@ ul.navbar-bawah li a:hover {
   align-items: center;
 }
 
-/* .kepala .pembuka .foto-mempelai img.border {
+.kepala .pembuka .foto-mempelai img.border {
   width: 30%;
   height: 90%;
   position: absolute;
   top: 64px;
   right: 187px;
-} */
+}
 
 .kepala .pembuka .foto-mempelai img.foto {
   margin: 5rem auto;
